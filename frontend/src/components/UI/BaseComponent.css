@@ -1,0 +1,10 @@
+.base{
+    background-color: #2399de;
+    padding: 1.2rem;
+    margin: 2rem auto;
+    width: 1900px;
+    max-width: 95%;
+    border-radius: 30px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+}

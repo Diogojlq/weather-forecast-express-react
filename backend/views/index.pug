@@ -1,0 +1,37 @@
+h1 Clima Agora
+h2 Clima para #{location} agora
+
+
+div
+    h2 Clima hoje 
+    p Temperatura min : #{forecast[0].temp.min}
+    p Temperatura max : #{forecast[0].temp.max}
+    p Sensação térmica : #{forecast[0].feels_like.day}
+    p Humidade : #{forecast[0].humidity}
+    p Descricao : #{forecast[0].weather[0].description}
+    p icon : 
+    img(src=imgUrlToday)
+
+div 
+    h2 Clima amanhã
+    p Temperatura min : #{forecast[1].temp.min}
+    p Temperatura max : #{forecast[1].temp.max}
+    p Sensação térmica : #{forecast[1].feels_like.day}
+    p Humidade : #{forecast[1].humidity}
+    p Chuva (mm) : #{forecast[1].rain}
+    p Descricao : #{forecast[1].weather[0].description}
+    p icon : 
+    img(src=imgUrlTomorrow)
+
+div 
+    h2 Clima depois de amanhã
+    p Temperatura min : #{forecast[2].temp.min}
+    p Temperatura max : #{forecast[2].temp.max}
+    p Sensação térmica : #{forecast[2].feels_like.day}
+    p Humidade : #{forecast[2].humidity}
+    p Chuva (mm) : #{forecast[2].rain}
+    p Descricao : #{forecast[2].weather[0].description}
+    p icon : 
+    img(src=imgUrlTDAT)
+
+        
