@@ -41,6 +41,8 @@ async function loadForecast() {
   return forecast
 }
 
+
+
 module.exports = {
     loadForecast,
     getLocationName,
